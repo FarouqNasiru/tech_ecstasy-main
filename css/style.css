@@ -564,7 +564,7 @@ button {
      margin-bottom: 30px;
      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
      transition: all 0.3s ease;
-     height: 280px;
+     height: 320px;
      display: flex;
      flex-direction: column;
      justify-content: space-between;
@@ -1027,7 +1027,7 @@ button {
  
  .footer-logo {
      max-width: 150px;
-     margin-bottom: 20px;
+     margin-bottom: 0px;
  }
  
  .footer-heading {
@@ -1981,3 +1981,24 @@ button {
 @media (max-width: 767.98px) {
      .contact_image { padding: 0 0 20px 0; }
 }
+
+/* Scroll reveal base */
+.reveal {
+     opacity: 0;
+     transform: translateY(30px);
+     transition: opacity 800ms ease, transform 1000ms ease;
+}
+.reveal.in-view {
+     opacity: 1;
+     transform: translateY(0);
+}
+
+/* Optional variants for different directions */
+.reveal-left { transform: translateX(-30px); }
+.reveal-left.in-view { transform: translateX(0); }
+.reveal-right { transform: translateX(30px); }
+.reveal-right.in-view { transform: translateX(0); }
+.reveal-up { transform: translateY(30px); }
+.reveal-up.in-view { transform: translateY(0); }
+.reveal-down { transform: translateY(-30px); }
+.reveal-down.in-view { transform: translateY(0); }
